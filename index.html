@@ -18,11 +18,12 @@
         <header>
             <h1>Vaanguard</h1>
                 <nav>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <h2>Main Navigation</h2>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
                 </nav>
         </header>
 
@@ -131,26 +132,34 @@
             <section id="contact">
                 <h2>Contact Us</h2>
                     <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
+                        <form>
+                            <label for="name">Full Name</label><br>
+                            <input type="text" id="name" name="name" required><br>
 
+                            <label for="email">Email Address</label><br>
+                            <input type="email" id="email" name="email" required><br>
+                            
+                            <label for="company">Company Name</label><br>
+                            <input type="text" id="company" name="company" required><br>
+                            
+                            <label for="industry">Industry</label><br>
+                            <input type="text" id="industry" name="industry" required><br>
+                            
+                            <label for="comment">How can we help you?</label><br>
+                            <textarea id="comment" name="comment" rows="4" required></textarea><br>
 
-                Full Name
-
-                Email Address
-
-                Company Name
-
-                Industry
-
-                How can we help you?
-
-                Submit
+                            <input type="submit" value="Submit">
+                        </form>
             </section>
         </main>
-        <footer>
 
-            For education purposes only. 
-            Email: info@vaanguard.com 
-            Phone: 480.123.4567
+        <footer>
+            <small>&copy; 2025 Vaanguard. All rights reserved.</small><br>
+                <p>For education purposes only.</p>
+                    <address>
+                        <a href="mailto:info@vaanguard.com">Email: info@vaanguard.com </a><br>
+                        Phone: 480.123.4567
+                    </address>
         </footer>
     </body>
 </html>
