@@ -77,14 +77,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 20px;
+    padding: 10px 20px;
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight:800;
     display: flex;
     align-items: center;
+}
+.menu-toggle {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 24px;
 }
 
 header nav h2 {
@@ -112,6 +118,33 @@ header nav ul li a:hover {
     font-weight: 800;
 }
 
+#hero h2 {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 20px 25px;
+    margin-bottom: 5px;
+}
+
+#hero p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+#hero a {
+    background-color: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    padding: 21px 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+    margin-top: 15px;
+    text-align: center;
+
+}
+
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
     width: 90%;
@@ -128,6 +161,7 @@ header nav ul li a:hover {
     text-align: center;
     padding: 1rem;
     overflow: hidden;
+    color: var(--white);
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
