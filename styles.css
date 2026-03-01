@@ -259,6 +259,49 @@ tbody tr:nth-child(even) {
     padding-bottom: 20px;
 }
 
+#contact {
+    background-color: var(--black);
+    color: var(--white);
+    padding-bottom: 20px;
+}
+#contact h2 {
+    font-size: 31px;
+    font-weight: 750;
+    padding: 39px 25px 25px 25px;
+}
+
+#contact p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 450;
+    padding: 0 10px 20px 10px;
+}
+
+#contact form label {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 10px 0 10px;
+}
+
+#contact form input[type="text"], #contact form input[type="email"], #contact form textarea {
+    border: 3px solid var(--blue);
+    width: 90%;
+    padding: 16px;
+    margin: 5px 10px 20px 10px;
+}
+
+#contact form input[type="submit"] {
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 750;
+    text-align: center;
+    padding: 15px;
+    margin: 12px 5px 20px 5px;
+}
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
     width: 90%;
