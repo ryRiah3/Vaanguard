@@ -223,14 +223,15 @@ header nav ul li a:hover {
 }
 
 #growth h3 {
-    padding: 20px 25px 28px 25px;
+    padding: 40px 25px 25px 25px;
 }
 
 table {
-    width: 100%;
+    width:100%;
     background-color: var(--black);
     color: var(--white);
     border: 1px solid var(--charcoal);
+    border-collapse: collapse;
 }
 
 th {
@@ -238,14 +239,25 @@ th {
     font-weight: 700;
     text-align: center;
     padding: 20px;
+    border-bottom: 1px solid var(--charcoal);
+    border-right: 1px solid var(--charcoal);
 }
 
 td {
     border-bottom: 1px solid var(--charcoal);
+    border-right: 1px solid var(--charcoal);
     padding: 20px;
+    text-align: center;
+    font-weight: 500;
 }
 
+tbody tr:nth-child(even) {
+    background-color: var(--charcoal);
+}
 
+#growth {
+    padding-bottom: 20px;
+}
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
