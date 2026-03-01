@@ -71,6 +71,47 @@ body {
     min-width: 400px;
 }
 
+header {
+    background-color: var(--black);
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight:800;
+    display: flex;
+    align-items: center;
+}
+
+header nav h2 {
+    display: none;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: var(--blue);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav ul li a:hover {
+    background-color: var(--blue);
+    color: var(--black);
+    font-weight: 800;
+}
+
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
     width: 90%;
