@@ -182,8 +182,7 @@ header nav ul li a:hover {
 #services section h3 {
     font-size: 23px;
     font-weight: 700;
-    margin: 5px 0 22px 30px;
-    
+    margin: 5px 0 22px 30px; 
 }
 
 #services section p {
@@ -192,6 +191,61 @@ header nav ul li a:hover {
     font-weight: 500;
     margin: 0 0 0 15px;
 }
+
+#services {
+    margin-bottom: 80px;
+}
+
+#results, #profits, #growth{
+    background-color: var(--blue);
+    color: var(--white);
+    margin: 0;
+}
+
+#results h2, #profits h3, #growth h3 {
+    font-size: 31px;
+    font-weight: 750;
+}
+
+#results h2 {
+    padding: 40px 25px 25px 25px;
+}
+
+#results p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 450;
+    padding: 0 10px 4px 10px;
+}
+
+#profits h3 {
+    padding: 20px 25px 40px 25px;
+}
+
+#growth h3 {
+    padding: 20px 25px 28px 25px;
+}
+
+table {
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--charcoal);
+}
+
+th {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+}
+
+td {
+    border-bottom: 1px solid var(--charcoal);
+    padding: 20px;
+}
+
+
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
