@@ -201,6 +201,11 @@ header nav ul li a:hover {
     border-radius: 10px;
     padding: 32px 0 16px 0;
     margin: 16px 0;
+    transition: transform 0.3s ease;
+}
+
+#services section:hover {
+    transform: translateY(-10px);
 }
 
 #services section h3 {
@@ -229,6 +234,18 @@ header nav ul li a:hover {
 #results h2, #profits h3, #growth h3 {
     font-size: 31px;
     font-weight: 750;
+    animation: slideDown 1s ease-out forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 #results h2 {
@@ -292,6 +309,7 @@ tbody tr:nth-child(even) {
     font-size: 31px;
     font-weight: 750;
     padding: 39px 25px 25px 25px;
+    animation: slideDown 1s ease-out forwards;
 }
 
 #contact p {
@@ -325,6 +343,11 @@ tbody tr:nth-child(even) {
     text-align: center;
     padding: 16px;
     margin: 15px 5px 20px 5px;
+}
+
+#contact form input[type="submit"]:hover {
+    background-color: var(--red);
+    transform: scale(1.05);
 }
 
 footer {
@@ -373,7 +396,15 @@ h1::before {
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
     position: relative;
     top: 25px;
+    animation: float 10s ease-in-out infinite;
 }
+
+@keyframes float {
+    0% { transform: translateY(-50%) translateY(30px); }
+    50% { transform: translateY(-50%) translateY(50px); }
+    100% { transform: translateY(-50%) translateY(30px); }
+}
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
@@ -393,7 +424,7 @@ h1::before {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: height 1s ease-in-out;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
@@ -419,6 +450,8 @@ h1::before {
 .bar {
     animation: stepUp 1s ease-in-out forwards;
 }
+
+
 
 
 /* MEDIA QUERIES (MEDIUM) */ 
