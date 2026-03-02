@@ -79,6 +79,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
+    position: relative;
 }
 
 h1 {
@@ -87,11 +88,25 @@ h1 {
     display: flex;
     align-items: center;
 }
-.menu-toggle {
-    background: none;
-    border: none;
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
     color: var(--white);
-    font-size: 24px;
+    font-size: 40px;
+}
+
+nav {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+#menu-toggle:checked ~ nav {
+    max-height: 300px;
 }
 
 header nav h2 {
