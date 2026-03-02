@@ -75,18 +75,15 @@ body {
 header {
     background-color: var(--black);
     color: var(--blue);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
+    display: block;
+    padding: 30px 20px 30px 20px;
     position: relative;
+    box-shadow: var(--blue) 0 8px 13px;
 }
 
 h1 {
     font-size: 30px;
     font-weight:800;
-    display: flex;
-    align-items: center;
 }
 
 #menu-toggle {
@@ -94,6 +91,9 @@ h1 {
 }
 
 .hamburger {
+    position: absolute;
+    right: 20px;
+    top: 30px;
     color: var(--white);
     font-size: 40px;
 }
@@ -115,9 +115,10 @@ header nav h2 {
 
 header nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 header nav ul li a {
@@ -125,7 +126,7 @@ header nav ul li a {
     display: block;
     color: var(--blue);
     padding: 10px 20px;
-    text-align: center;
+    text-align: right;
 }
 
 header nav ul li a:hover {
@@ -144,7 +145,7 @@ header nav ul li a:hover {
 #hero p {
     font-size: 16px;
     line-height: 1.5;
-    font-weight: 550;
+    font-weight: 500;
 }
 
 #hero a {
@@ -158,6 +159,11 @@ header nav ul li a:hover {
     display: inline-block;
     margin-top: 15px;
     text-align: center;
+}
+
+#hero .container {
+    background: rgba(225, 225, 225, 0.025);
+    backdrop-filter: blur(10px);
 }
 
 #about {
