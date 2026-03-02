@@ -200,8 +200,13 @@ header nav ul li a:hover {
     color: var(--white);
     border-radius: 10px;
     padding: 32px 0 16px 0;
-    margin: 16px 0;
+    margin: 8px 0;
     transition: transform 0.3s ease;
+}
+
+#services .container {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 #services section:hover {
@@ -229,6 +234,13 @@ header nav ul li a:hover {
     background-color: var(--blue);
     color: var(--white);
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#results .container {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 #results h2, #profits h3, #growth h3 {
@@ -300,6 +312,9 @@ tbody tr:nth-child(even) {
     padding-bottom: 20px;
 }
 
+#contact form{
+    display: block;
+}
 #contact {
     background-color: var(--black);
     color: var(--white);
@@ -451,24 +466,58 @@ h1::before {
     animation: stepUp 1s ease-in-out forwards;
 }
 
-
-
-
 /* MEDIA QUERIES (MEDIUM) */ 
-
-    #results {
-        grid-template-columns: 1fr 1fr;
+@media screen and (min-width: 800px) {
+    #menu-toggle, .hamburger {
+        display: none;
     }
-    .results-container {
+
+    header nav {
+        max-height: none;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 55%;
+        top: 10%;
+    }
+
+    header nav ul {
         flex-direction: row;
-        justify-content: space-between;
-    }
-    .results-table {
-        width: 50%;
-    }
-    .bar-chart {
-        width: 50%;
+        margin: 0;
+        padding: 0;
     }
 
+    header nav ul li a {
+        padding: 10px 20px;
+    }
+    #services .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 0 15px;
+    }
 
+    #services .container > h2 {
+        grid-column: 1 / -1;
+    }
+    #results .container  > h2 {
+        grid-column: 1 / -1;
+    }
+
+    #profits .container > table {
+        width: 50%;
+    }
+    #growth .container > #bar-chart {
+        width: 50%;
+    }
+}
 /* MEDIA QUERIES (LARGE) */
+@media screen and (min-width: 1024px) {
+    header nav {
+        left: 70%;
+        top: 10%;
+    }
+    #contact form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
